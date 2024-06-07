@@ -1,38 +1,335 @@
-.App {
-  text-align: center;
+.App .content{
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #17382E;
+    height: 100vh;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header a{
+    text-decoration: none;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo{
+    margin-top: 50px;
+    width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 30px;
+    margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a{
+    font-size: 22px;
+}
+
+nav img{
+    width: 30px;
+}
+
+main{
+    margin-left: 600px;
+}
+
+.post{
+    padding: 50px;
+    margin: 50px auto;
+    width: 500px;
+    background-color: #45675C;
+    border-radius: 30px;
+    color: white;
+    transition: 0.5s;
+}
+
+
+.post .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+footer{
+    text-align: center;
+    padding: 50px;
+    background-color: #5C8968;
+    color: white;
+    z-index: 1000;
+    position: relative;
+    margin-top: 300px;
+}
+
+.links{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.links a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+.profile{
+    padding-bottom: 200px;
+    margin-left: 330px;
+    width: 100%;
+}
+
+.background{
+    height: 200px;
+    background-color: #5C8968;
+    width: 100%;
+}
+
+.info{
+    padding-left: 80px;
+    padding-top: 100px;
+}
+
+.info img{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+
+.fullName{
+    display: flex;
+    align-items: center;
+    gap: 450px;
+}
+
+.fullName button{
+    width: 170px;
+    padding: 8px;
+    background-color: white;
+    color: #17382E;
+    border: #17382E solid 3px;
+    border-radius: 30px;
+    box-shadow: none;
+    font-weight: bolder;
+}
+
+.AboutContainer{
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    width: 800px;
+    height: 100px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.friends{
+    margin-left: 360px;
+    flex: 1;
+}
+
+.friend{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    border: #8C8C8C 1px solid;
+    gap: 30px;
+    padding: 20px;
+}
+
+.text{
+    margin-left: 20px;
+}
+
+.text .data{
+    color: #767676;
+    font-weight: ligher;
+    font-size: smaller;
+}
+
+.text h3{
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.text p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.like{
+    cursor: pointer;
+}
+
+.post .like_button{
+    display: flex;
+    gap: 15px;
+}
+
+.post_form h1{
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form{
+    text-align: center;
+    background-color: #45675C;
+    border-radius: 30px;
+    width: 600px;
+    padding: 50px;
+}
+
+.image_select img{
+    position: absolute;
+    left: 350px;
+    top: 8px;
+}
+
+.image_select{
+    position: relative;
+}
+
+.title_form{
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 30px;
+    width: 500px;
+    border: #AACFC2 3px solid;
+}
+
+.text_form{
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 30px;
+    width: 500px;
+    border: #AACFC2 3px solid;
+}
+
+.image_form{
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 30px;
+    width: 500px;
+    border: #AACFC2 3px solid;
+}
+
+.sumbit_button{
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    background-color: #AACFC2;
+    border: black 1px solid;
+    border-radius: 30px;
+    width: 200px;
+}
+
+.friends_form{
+    text-align: center;
+    background-color: #45675C;
+    border-radius: 30px;
+    width: 600px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.name_form{
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 30px;
+    width: 500px;
+    border: #AACFC2 3px solid;
+}
+
+.sms_form{
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 30px;
+    width: 500px;
+    border: #AACFC2 3px solid;
+}
+
+.data_form{
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 30px;
+    width: 500px;
+    border: #AACFC2 3px solid;
+}
+
+.sumbit_sms{
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    background-color: #AACFC2;
+    border: black 1px solid;
+    border-radius: 30px;
+    width: 200px;
+}
+
+.delete_button{
+    color: rgb(255, 255, 255);
+    background-color: #AACFC2;
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 30px;
+    padding: 5px;
+    width: 100px;
+    margin-left: 350px;
+    transition: 0.3s;
+}
+
+.delete_button:hover{
+    background-color: #8fafa4;
+}
+
+.delete_sms{
+    color: rgb(255, 255, 255);
+    background-color: #AACFC2;
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 30px;
+    padding: 5px;
+    width: 100px;
+    margin-left: 350px;
+    transition: 0.3s;
+}
+
+.delete_sms:hover{
+    background-color: #8fafa4;
+}
+
+.info_editor{
+    color: rgb(255, 255, 255);
+    background-color: #AACFC2;
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+    transition: 0.3s;
+    position: relative;
+    left: 450px;
+    bottom: 140px;
+}
+
+.info_editor:hover{
+    background-color: #8fafa4;
 }
